@@ -1,9 +1,9 @@
-
+import AppRouter from './router/AppRouter';
 
 function App() {
   return (
     <>
-      <h1 className="heading1">Innify</h1>
+      <AppRouter />
     </>
   );
 }
