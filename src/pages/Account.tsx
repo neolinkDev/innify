@@ -2,6 +2,8 @@
 
 export const Account = () => {
   return (
-    <div className="heading1">Cuenta</div>
+    <>
+      <h1 className="heading1">Cuenta</h1>
+    </>
   )
 }
