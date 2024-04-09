@@ -1,7 +1,7 @@
-
+import styles from '../styles/Sidebar.module.css'
 
 export const Sidebar = () => {
   return (
-    <aside>Sidebar</aside>
+    <aside className={styles.aside}>Sidebar</aside>
   )
 }
