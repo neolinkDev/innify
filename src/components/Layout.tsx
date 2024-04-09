@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Header, Sidebar } from './';
+import { Main } from './Main';
 
 
 
@@ -9,9 +10,9 @@ export const Layout = () => {
       <Header />
       <Sidebar />
       <h3>Layout</h3>
-      <main>
+      <Main>
         <Outlet />
-      </main>
+      </Main>
     </div>
   );
 };
