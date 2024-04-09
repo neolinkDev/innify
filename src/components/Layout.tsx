@@ -2,17 +2,19 @@ import { Outlet } from 'react-router-dom';
 import { Header, Sidebar } from './';
 import { Main } from './Main';
 
-
+import styles from '../styles/Layout.module.css'
 
 export const Layout = () => {
   return (
-    <div>
+    <div className={styles.div}>
+
       <Header />
       <Sidebar />
-      <h3>Layout</h3>
+      
       <Main>
         <Outlet />
       </Main>
+      
     </div>
   );
 };
