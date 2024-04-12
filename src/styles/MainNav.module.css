@@ -1,0 +1,57 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.navLink,
+.navLink:link,
+.navLink:visited {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  position: relative;
+  /* Añade esta línea */
+  color: var(--color-grey-600);
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: .5rem 2.4rem;
+  transition: all 0.3s;
+}
+
+.navLink:hover,
+.navLink:active,
+.navLink.active:link,
+.navLink.active:visited {
+  color: var(--color-grey-800);
+  background-color: var(--color-grey-200);
+  border-radius: var(--border-radius-sm);
+
+}
+
+.navLink:hover::before,
+.navLink:active::before,
+.navLink.active:link::before,
+.navLink.active:visited::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-brand-600);
+}
+
+
+.navLink svg {
+
+  color: var(--color-grey-400);
+  transition: all 0.3s;
+}
+
+.navLink:hover svg,
+.navLink:active svg,
+.navLink.active:link svg,
+.navLink.active:visited svg {
+  color: var(--color-brand-600);
+}
