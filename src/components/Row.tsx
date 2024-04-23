@@ -2,7 +2,7 @@ import styles from '../styles/Row.module.css';
 
 interface RowProps {
   type?: 'horizontal' | 'vertical';
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const Row = ({ type = 'vertical', children }: RowProps) => {
